@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wvpctool", "wvpctool\wvpctool.vcproj", "{07B71F8C-6477-4D2D-A0CC-446E84454EE5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E4CC5E2C-91B1-453F-80AD-25390DB99125} = {E4CC5E2C-91B1-453F-80AD-25390DB99125}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "targetdevice", "targetdevice\targetdevice.vcproj", "{E4CC5E2C-91B1-453F-80AD-25390DB99125}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07B71F8C-6477-4D2D-A0CC-446E84454EE5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{07B71F8C-6477-4D2D-A0CC-446E84454EE5}.Debug|Win32.Build.0 = Debug|Win32
+		{07B71F8C-6477-4D2D-A0CC-446E84454EE5}.Release|Win32.ActiveCfg = Release|Win32
+		{07B71F8C-6477-4D2D-A0CC-446E84454EE5}.Release|Win32.Build.0 = Release|Win32
+		{E4CC5E2C-91B1-453F-80AD-25390DB99125}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E4CC5E2C-91B1-453F-80AD-25390DB99125}.Debug|Win32.Build.0 = Debug|Win32
+		{E4CC5E2C-91B1-453F-80AD-25390DB99125}.Release|Win32.ActiveCfg = Release|Win32
+		{E4CC5E2C-91B1-453F-80AD-25390DB99125}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

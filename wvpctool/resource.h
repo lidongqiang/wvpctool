@@ -1,0 +1,121 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Visual C++ generated include file.
+// Used by wvpctool.rc
+//
+#define IDM_ABOUTBOX                    0x0010
+#define IDD_ABOUTBOX                    100
+#define IDS_ABOUTBOX                    101
+#define IDD_WVPCTOOL_DIALOG             102
+#define IDD_DIALOG_DATABASE             125
+#define IDR_MAINFRAME                   128
+#define IDR_MENU1                       129
+#define IDD_DIALOG_CONFIG               130
+#define IDR_ADD_DELETE                  131
+#define IDD_DIALOG_GENERAL              131
+#define IDD_DIALOG_LOGIN                138
+#define IDD_DIALOG_CHANGE_PWD           139
+#define IDC_BUTTON_BROWBIN              1000
+#define IDC_STATIC_XML                  1001
+#define IDC_EDIT_KEYBOXBIN              1002
+#define IDC_BUTTON_SIGN                 1003
+#define IDC_STATIC_GTI                  1004
+#define IDC_EDIT_GTI                    1005
+#define IDC_EDIT_AT                     1006
+#define IDC_STATIC_AT                   1007
+#define IDC_LIST_REPORT                 1008
+#define IDC_STATIC_SCRIPT               1010
+#define IDC_EDIT_SCRIPT                 1011
+#define IDC_BUTTON_BROWSCRIPT           1012
+#define IDC_STATIC_APPNAME              1013
+#define IDC_STATIC_RK                   1014
+#define IDC_STATIC_WVKEY                1015
+#define IDC_STATIC_WVFLG                1016
+#define IDC_STATIC_DEVSN                1017
+#define IDC_STATIC_SN_TYPE              1018
+#define IDC_COMBO_SNTYPE                1019
+#define IDC_TAB_SETTINGS                1020
+#define IDC_CHECK_AUTO                  1021
+#define IDC_CHECK_FUSE                  1022
+#define IDC_CHECK_WV                    1023
+#define IDC_CHECK_ONLYAT                1024
+#define IDC_BUTTON_SCRIPT               1027
+#define IDC_BUTTON_KEYBOXBIN            1029
+#define IDC_CHECK_USEDB                 1030
+#define IDC_STATIC_ACTION               1031
+#define IDC_STATIC_MSG                  1032
+#define IDC_STATIC_TOTAL                1033
+#define IDC_STATIC_TNUM                 1034
+#define IDC_STATIC_PASS                 1035
+#define IDC_STATIC_PNUM                 1036
+#define IDC_CHECK_XML                   1037
+#define IDC_CHECK_BIN                   1038
+#define IDC_CHECK_FORCEWRITE            1039
+#define IDC_STATIC_TYPE                 1039
+#define IDC_STATIC_NAME                 1040
+#define IDC_STATIC_TABLE                1041
+#define IDC_STATIC_SERVER               1042
+#define IDC_STATIC_USERNAME             1043
+#define IDC_STATIC_PASSWORD             1044
+#define IDC_STATIC_WRITE_DATE           1045
+#define IDC_EDIT_USER                   1046
+#define IDC_CHECK_READ                  1046
+#define IDC_CHECK_WVREAD                1046
+#define IDC_EDIT_PWD                    1047
+#define IDC_EDIT_DATABASENAME           1048
+#define IDC_STATIC_PWD                  1048
+#define IDC_STATIC_NEW_PWD              1050
+#define IDC_STATIC_CONFIRM_PWD          1051
+#define IDC_STATIC_LOGIN                1052
+#define IDC_STATIC_LOG_OPTION           1052
+#define IDC_STATIC_DB_OPTION            1053
+#define IDC_STATIC_TEST_OPTION          1054
+#define IDC_STATIC_BASE                 1055
+#define IDC_STATIC_FUSE                 1056
+#define IDC_STATIC_WV                   1057
+#define IDC_STATIC_GRP                  1058
+#define IDC_CHECK_REBOOT                1059
+#define IDC_COMBO_MODE                  1061
+#define IDC_CHECK1                      1062
+#define IDC_CHECK_SCRIPT_BIN            1062
+#define IDC_CHECK_READ_FUSE             1063
+#define IDC_CHECK_REM                   1065
+#define IDC_BT_OK                       1170
+#define IDC_BT_CANCEL                   1171
+#define IDC_IPADDRESS_DBSERVER          1172
+#define IDC_EDIT_OLD_PWD                1172
+#define IDC_LIST_INFO                   1173
+#define IDC_EDIT_NEW_PWD                1173
+#define IDC_BUTTON_CREATE               1174
+#define IDC_EDIT_CONFIRM_PWD            1174
+#define IDC_COMBO_DBTYPE                1175
+#define IDC_EDIT_TABLE                  1176
+#define IDC_STATIC_TESTLOG              1177
+#define IDC_EDIT_TABLE_DEVSN            1183
+#define IDC_EDIT_TABLE_WVKEY            1184
+#define IDC_EDIT_TABLE_WVFLG            1185
+#define IDC_EDIT_TABLE_WOID             1186
+#define ID_SETTING_AUTO                 32771
+#define ID_SETTING_WV                   32772
+#define ID_SETTING_FUSE                 32773
+#define ID_HELP_ABOUT                   32774
+#define ID_POPMENU_DELETE               32774
+#define ID_HELP_LOGFOLDER               32775
+#define ID_POPMENU_ADD                  32775
+#define ID_SETTING_LOGIN                32776
+#define ID_POPMENU_INSERT               32776
+#define ID_SETTING_ONLYAT               32777
+#define ID_SETTING_MES                  32778
+#define ID_USER_LOGOUT                  32779
+#define ID_SETTING                      32780
+#define ID_USER_CHANGEPASSWORD          32781
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        132
+#define _APS_NEXT_COMMAND_VALUE         32782
+#define _APS_NEXT_CONTROL_VALUE         1064
+#define _APS_NEXT_SYMED_VALUE           101
+#endif
+#endif

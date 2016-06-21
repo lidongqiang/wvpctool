@@ -1,0 +1,460 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\wvpctool.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\wvpctool.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "User"
+    BEGIN
+        MENUITEM "Login",                       ID_SETTING_LOGIN
+        MENUITEM "Logout",                      ID_USER_LOGOUT
+        MENUITEM SEPARATOR
+        MENUITEM "ChangePassword",              ID_USER_CHANGEPASSWORD
+    END
+    MENUITEM "Setting",                     ID_SETTING
+    POPUP "Help"
+    BEGIN
+        MENUITEM "About",                       ID_HELP_ABOUT
+        MENUITEM "Log folder",                  ID_HELP_LOGFOLDER
+    END
+END
+
+IDR_ADD_DELETE MENU 
+BEGIN
+    POPUP "PopMenu"
+    BEGIN
+        MENUITEM "Delete",                      ID_POPMENU_DELETE
+        MENUITEM "Insert",                      ID_POPMENU_INSERT
+        MENUITEM "Add",                         ID_POPMENU_ADD
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_DATABASE DIALOGEX 0, 0, 350, 256
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDC_BT_OK,207,213,50,19
+    PUSHBUTTON      "Cancel",IDC_BT_CANCEL,280,213,50,19
+    GROUPBOX        "Loggin Option",IDC_STATIC_LOG_OPTION,6,6,162,66
+    LTEXT           "Server:",IDC_STATIC_SERVER,18,19,42,8
+    LTEXT           "UserName:",IDC_STATIC_USERNAME,18,37,36,8
+    LTEXT           "Password:",IDC_STATIC_PASSWORD,18,55,34,8
+    CONTROL         "",IDC_IPADDRESS_DBSERVER,"SysIPAddress32",WS_TABSTOP,60,16,96,14
+    EDITTEXT        IDC_EDIT_USER,60,34,96,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PWD,60,52,96,14,ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST_INFO,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,18,91,198,82
+    GROUPBOX        "Test Option",IDC_STATIC_TEST_OPTION,6,78,336,117
+    PUSHBUTTON      "Test",IDC_BUTTON_CREATE,174,174,42,15
+    GROUPBOX        "DataBase Option",IDC_STATIC_DB_OPTION,174,6,168,66
+    LTEXT           "Type:",IDC_STATIC_TYPE,186,19,20,8
+    LTEXT           "Name:",IDC_STATIC_NAME,186,37,22,8
+    LTEXT           "Table:",IDC_STATIC_TABLE,186,55,30,8
+    COMBOBOX        IDC_COMBO_DBTYPE,216,18,114,37,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_DATABASENAME,216,34,114,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TABLE,216,52,114,14,ES_AUTOHSCROLL
+    LTEXT           "this is invisual",IDC_STATIC_TESTLOG,18,179,150,12,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_TABLE_WVKEY,264,113,66,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TABLE_WVFLG,264,131,66,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TABLE_DEVSN,264,95,66,14,ES_AUTOHSCROLL
+    LTEXT           "WVKEY->",IDC_STATIC_WVKEY,222,116,32,8
+    LTEXT           "FLAG->",IDC_STATIC_WVFLG,222,134,26,8
+    LTEXT           "SN->",IDC_STATIC_DEVSN,222,98,18,8
+    LTEXT           "SN_TYPE:",IDC_STATIC_SN_TYPE,222,170,32,8
+    COMBOBOX        IDC_COMBO_SNTYPE,264,168,66,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_TABLE_WOID,264,149,66,14,ES_AUTOHSCROLL
+    LTEXT           "Date->",IDC_STATIC_WRITE_DATE,222,152,36,8
+END
+
+IDD_DIALOG_CONFIG DIALOGEX 0, 0, 367, 247
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Setting"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,245,227,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,303,227,50,14
+    CONTROL         "",IDC_TAB_SETTINGS,"SysTabControl32",0x0,6,5,354,218
+END
+
+IDD_DIALOG_GENERAL DIALOGEX 0, 0, 364, 183
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC_WV,19,108,311,60
+    CONTROL         "WideVine Option",IDC_CHECK_WV,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,24,108,69,10
+    GROUPBOX        "",IDC_STATIC_FUSE,19,54,311,48
+    CONTROL         "Fuse Option",IDC_CHECK_FUSE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,24,54,55,10
+    CONTROL         "AutoTest",IDC_CHECK_AUTO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,33,25,52,10
+    CONTROL         "Use At Port",IDC_CHECK_ONLYAT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,89,25,53,10
+    LTEXT           "Script:",IDC_STATIC_SCRIPT,33,68,52,8
+    EDITTEXT        IDC_EDIT_SCRIPT,85,65,215,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_SCRIPT,310,65,14,14
+    LTEXT           "KeyBoxBin:",IDC_STATIC_XML,33,128,52,8
+    EDITTEXT        IDC_EDIT_KEYBOXBIN,85,125,215,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_KEYBOXBIN,310,125,14,14
+    GROUPBOX        "Basic Option",IDC_STATIC_BASE,19,7,311,39
+    CONTROL         "UseDataBase",IDC_CHECK_USEDB,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,211,151,89,10
+    CONTROL         "XML",IDC_CHECK_XML,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,91,151,25,10
+    CONTROL         "BIN",IDC_CHECK_BIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,150,151,54,10
+    CONTROL         "Force Write",IDC_CHECK_FORCEWRITE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,150,25,54,10
+    CONTROL         "Read",IDC_CHECK_WVREAD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,33,151,33,10
+    CONTROL         "Reboot",IDC_CHECK_REBOOT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,211,25,51,10
+    COMBOBOX        IDC_COMBO_MODE,266,24,44,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Bin",IDC_CHECK_SCRIPT_BIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,211,85,54,10
+    CONTROL         "Read",IDC_CHECK_READ_FUSE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,91,85,84,10
+END
+
+IDD_DIALOG_LOGIN DIALOGEX 0, 0, 172, 101
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Login"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_PWD,58,25,90,12,ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL         "Remember me",IDC_CHECK_REM,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,58,46,61,10
+    DEFPUSHBUTTON   "OK",IDOK,32,73,46,17
+    PUSHBUTTON      "Cancel",IDCANCEL,97,73,46,17
+    GROUPBOX        "",IDC_STATIC_GRP,7,6,158,56
+    LTEXT           "Password",IDC_STATIC_PWD,20,27,32,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_DATABASE, DIALOG
+    BEGIN
+        VERTGUIDE, 6
+        VERTGUIDE, 18
+        VERTGUIDE, 60
+        VERTGUIDE, 156
+        VERTGUIDE, 168
+        VERTGUIDE, 174
+        VERTGUIDE, 186
+        VERTGUIDE, 216
+        VERTGUIDE, 222
+        VERTGUIDE, 264
+        VERTGUIDE, 330
+        VERTGUIDE, 342
+        HORZGUIDE, 6
+        HORZGUIDE, 30
+        HORZGUIDE, 48
+        HORZGUIDE, 66
+        HORZGUIDE, 72
+        HORZGUIDE, 78
+        HORZGUIDE, 91
+        HORZGUIDE, 102
+        HORZGUIDE, 120
+        HORZGUIDE, 138
+        HORZGUIDE, 156
+        HORZGUIDE, 174
+        HORZGUIDE, 185
+        HORZGUIDE, 222
+    END
+
+    IDD_DIALOG_CONFIG, DIALOG
+    BEGIN
+        VERTGUIDE, 6
+        VERTGUIDE, 360
+        HORZGUIDE, 5
+        HORZGUIDE, 234
+    END
+
+    IDD_DIALOG_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        VERTGUIDE, 19
+        VERTGUIDE, 24
+        VERTGUIDE, 33
+        VERTGUIDE, 85
+        VERTGUIDE, 91
+        VERTGUIDE, 150
+        VERTGUIDE, 204
+        VERTGUIDE, 211
+        VERTGUIDE, 300
+        VERTGUIDE, 310
+        VERTGUIDE, 330
+        TOPMARGIN, 7
+        HORZGUIDE, 30
+        HORZGUIDE, 54
+        HORZGUIDE, 72
+        HORZGUIDE, 90
+        HORZGUIDE, 102
+        HORZGUIDE, 108
+        HORZGUIDE, 132
+        HORZGUIDE, 156
+        HORZGUIDE, 168
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About wvpctool"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "wvpctool, Version 1.0",IDC_STATIC_APPNAME,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2016",IDC_STATIC_RK,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_WVPCTOOL_DIALOG DIALOGEX 0, 0, 529, 296
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "wvpctool"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "keyboxbin",IDC_STATIC_MSG,72,6,292,12
+    PUSHBUTTON      "Sign",IDC_BUTTON_SIGN,464,2,50,30
+    LTEXT           "Gti:",IDC_STATIC_GTI,398,278,30,8
+    EDITTEXT        IDC_EDIT_GTI,431,275,19,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "At:",IDC_STATIC_AT,471,278,30,8
+    EDITTEXT        IDC_EDIT_AT,503,275,19,14,ES_AUTOHSCROLL | ES_READONLY
+    LISTBOX         IDC_LIST_REPORT,6,35,516,231,LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "ACTION:",IDC_STATIC_ACTION,18,7,48,11
+    LTEXT           "Total:",IDC_STATIC_TOTAL,18,20,20,8,NOT WS_VISIBLE
+    LTEXT           "0",IDC_STATIC_TNUM,66,20,8,8,NOT WS_VISIBLE
+    LTEXT           "Pass:",IDC_STATIC_PASS,113,20,19,8,NOT WS_VISIBLE
+    LTEXT           "0",IDC_STATIC_PNUM,149,20,8,8,NOT WS_VISIBLE
+END
+
+IDD_DIALOG_CHANGE_PWD DIALOGEX 0, 0, 197, 79
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Change Password"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_NEW_PWD,89,18,91,12,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CONFIRM_PWD,89,36,91,12,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,34,57,50,18
+    PUSHBUTTON      "Cancel",IDCANCEL,116,57,50,18
+    RTEXT           "New Password",IDC_STATIC_NEW_PWD,19,20,60,8
+    RTEXT           "Confirm Password",IDC_STATIC_CONFIRM_PWD,19,38,60,8
+    GROUPBOX        "",IDC_STATIC_GRP,8,5,180,50
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_WVPCTOOL_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 438
+        VERTGUIDE, 6
+        VERTGUIDE, 18
+        VERTGUIDE, 66
+        VERTGUIDE, 72
+        VERTGUIDE, 222
+        VERTGUIDE, 228
+        VERTGUIDE, 239
+        VERTGUIDE, 522
+        BOTTOMMARGIN, 255
+        HORZGUIDE, 12
+        HORZGUIDE, 24
+        HORZGUIDE, 35
+        HORZGUIDE, 241
+        HORZGUIDE, 282
+    END
+
+    IDD_DIALOG_CHANGE_PWD, DIALOG
+    BEGIN
+        VERTGUIDE, 89
+        VERTGUIDE, 180
+        HORZGUIDE, 24
+        HORZGUIDE, 42
+        HORZGUIDE, 66
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "wvpctool.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "wvpctool.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About wvpctool..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\wvpctool.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
